@@ -1,0 +1,70 @@
+### js
+build/Release
+node_modules/
+jspm_packages/
+typings/
+
+
+### Python
+__pycache__/
+build/
+dist/
+*.spec
+
+
+### Visual Studio
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.exe
+mono_crash.*
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+.vs/
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# Other
+*.psd
+*.blend
+
+# Angular
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+/dist
+/tmp
+/out-tsc
+# Only exists if Bazel was run
+/bazel-out
+chrome-profiler-events*.json
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.history/*
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+.DS_Store
+Thumbs.db
