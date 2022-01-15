@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MainService } from '../services/main.service';
 
 @Component({
   selector: 'app-landing-page',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private mainService: MainService) { }
 
   ngOnInit(): void {
+    this.mainService.setDocTitle("ttetrafon's Landing");
   }
 
 }
