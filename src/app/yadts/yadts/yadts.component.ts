@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { MainService } from 'src/app/services/main.service';
 
 @Component({
@@ -8,7 +9,9 @@ import { MainService } from 'src/app/services/main.service';
 })
 export class YadtsComponent implements OnInit {
 
-  constructor(private mainService: MainService) { }
+  constructor(private mainService: MainService) {
+    console.log("YadtsComponent started");
+  }
 
   ngOnInit(): void {
     this.mainService.setDocTitle("YADTS");
