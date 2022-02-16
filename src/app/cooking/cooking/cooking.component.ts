@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { MainService } from 'src/app/services/main.service';
+import { CookingService } from 'src/app/services/cooking.service';
 
 @Component({
   selector: 'app-cooking',
@@ -9,7 +10,7 @@ import { MainService } from 'src/app/services/main.service';
 })
 export class CookingComponent implements OnInit {
 
-  constructor(private mainService: MainService) {
+  constructor(private mainService: MainService, private cookingService: CookingService) {
     console.log("CookingComponent started");
   }
 
