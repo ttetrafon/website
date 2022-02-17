@@ -25,7 +25,14 @@ export class CookingService {
 
   private async dataInitialisation(): Promise<void> {
     this.main.log(this, "---> dataInitialisation()", console.log);
-
+    this.subRecipes["VegetableLaksa"] = new CookingRecipeBase(
+      "VegetableLaksa",
+      {},
+      {
+        1: "",
+        2: ""
+      }
+    );
 
   }
 
