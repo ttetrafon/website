@@ -7,7 +7,12 @@ import { Title } from '@angular/platform-browser';
 export class MainService {
 
   constructor(private titleService: Title) {
-    console.log("MainService started");
+    this.log(this, "Started", console.log);
+  }
+
+  // Logging
+  public log(origin: object, message: string, fn: Function): void {
+    fn("[" + origin.constructor.name + "] " + message);
   }
 
   // Website Title
@@ -15,6 +20,5 @@ export class MainService {
     // console.log('current title:::::' + this.titleService.getTitle());
     this.titleService.setTitle(title);
   }
-
 
 }

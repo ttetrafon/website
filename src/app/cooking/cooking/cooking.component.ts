@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { MainService } from 'src/app/services/main.service';
 import { CookingService } from 'src/app/services/cooking.service';
+import { LoggingService } from 'src/app/services/logging.service';
+import { MainService } from 'src/app/services/main.service';
 
 @Component({
   selector: 'app-cooking',
@@ -10,12 +11,13 @@ import { CookingService } from 'src/app/services/cooking.service';
 })
 export class CookingComponent implements OnInit {
 
-  constructor(private mainService: MainService, private cookingService: CookingService) {
-    console.log("CookingComponent started");
+  constructor(private main: MainService, private cookingService: CookingService) {
+    main.log(this, "Started", console.log);
   }
 
   ngOnInit(): void {
-    this.mainService.setDocTitle("Cooking");
+    this.main.setDocTitle("Cooking");
   }
+
 
 }
